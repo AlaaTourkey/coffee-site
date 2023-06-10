@@ -18,18 +18,33 @@
   <!-- css links -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
 
 
   <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
+
+
+
+  <!-- loading screen -->
+  <section id="loading">
+    <i class="fa fa-spinner fa-3x fa-spin"></i>
+  </section>
+
+  <!-- button up -->
+  <button id="btnUp" class="btn text-white p-2 rounded-circle">
+    <i class="fa fa-arrow-alt-circle-up p-2 "></i>
+  </button>
+
+
   <!--start nav -->
-  <nav class="navbar navbar-expand-lg p-0 mb-5 fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid ">
       <a class="navbar-brand" href="#"><img src="img/Logo-woostroid.svg" alt="" srcset=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -38,23 +53,23 @@
       </button>
       <div class="collapse navbar-collapse my-4 " id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <li class="nav-item ">
+            <a class="nav-link active " aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">SHOP</a>
+            <a class="nav-link " href="#about">about</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CATEGORIES</a>
+            <a class="nav-link " href="#selling">BEST SELLER</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">BEST SELLER</a>
+            <a class="nav-link " href="#offer">Hot Offer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">FEATURES</a>
+            <a class="nav-link " href="#portfolio">CATEGORIES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PRICING</a>
+            <a class="nav-link " href="#Shop">PRICING</a>
           </li>
 
         </ul>
@@ -65,7 +80,7 @@
 
 
   <!--start home -->
-  <section class=" home my-5 ">
+  <section id="home" class=" home ">
     <div class="owl-carousel header-carousel owl-theme">
       <div class="item ">
         <div class="item position-relative d-flex align-items-center justify-content-center">
@@ -73,7 +88,7 @@
           <div class="position-absolute layout w-100  px-5  d-flex align-items-center justify-content-center">
             <div class="caption text-center">
               <h1> <span>Feel</span> the Taste <br><span>of</span> Coffee</h1>
-              <button class="bttn readMore">Read More</button>
+              <button class="bttn readMore color1">Read More</button>
             </div>
           </div>
         </div>
@@ -84,7 +99,7 @@
           <div class="position-absolute layout w-100  px-5  d-flex align-items-center justify-content-center">
             <div class="caption text-center">
               <h1> <span>Feel</span> the Taste <br><span>of</span> Coffee</h1>
-              <button class="bttn readMore">Read More</button>
+              <button class="bttn readMore color1">Read More</button>
             </div>
           </div>
         </div>
@@ -96,7 +111,7 @@
   <!--end home -->
 
   <!--start about -->
-  <section class="about my-5 ">
+  <section id="about" class="about my-5 ">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-5">
@@ -143,45 +158,18 @@
   </section>
   <!--end about -->
 
-  <!-- start selling -->
-  <section class="selling my-5 ">
-    <div class="container">
-      <div class="row pt-5">
-        <div class="col-lg-6 col-md-6">
-          <div class="selling-caption text-start my-1 px-2">
-            <h2>best<br> selling</h2>
-            <div class=" py-4">
-              <p>Time to bring home the best of the coffee and tea experiences we’ve enjoyed at independent roasteries
-                and cafes all over the world. We wanted -needed- a “third place” coffee & tea experience locally. We
-                couldn’t find it here so we created it.</p>
-            </div>
-            <button class="bttn shop-now text-capitalize">shop now</button>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="selling-photo text-center px-5 position-relative overflow-hidden ">
-            <img class="w-75  img-fluid " src="img/Group-6.png" alt="selling-photo">
-            <img class="w-75 photo position-absolute" src="img/Group-3-1.png" alt="" srcset="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- start selling -->
-
-
   <!-- start offer -->
   <section>
-    <div class="offer mb-5 text-white ">
+    <div id="offer" class="offer mb-5 py-5 text-white ">
       <div class="container-fluid ">
         <div class="row">
-          <div class="col-lg-6   hot-offer ">
+          <div class="col-lg-6 hot-offer text-center">
             <h1>Hot <br> Offer</h1>
             <h4>Final Sale Items</h4>
-            <button class="bttn shop-now text-capitalize my-4">shop now</button>
+            <button class="color1 bttn shop-now text-capitalize my-4">shop now</button>
           </div>
           <div class="col-lg-6 p-0">
-            <div class=" digitalClock text-center position-relative">
+            <div class=" h-100 digitalClock text-center position-relative">
               <h2>#hotoffer</h2>
               <h1 id="clock" class="digital-clock "></h1>
               <img class=" position-absolute" src="img/Group-2.png" alt="">
@@ -193,13 +181,38 @@
   </section>
   <!-- end offer -->
 
+  <!-- start selling -->
+  <section id="selling" class="selling my-5 ">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-lg-6 col-md-6">
+          <div class="selling-caption text-start my-1 px-2">
+            <h2>best<br> selling</h2>
+            <div class=" py-4">
+              <p>Time to bring home the best of the coffee and tea experiences we’ve enjoyed at independent roasteries
+                and cafes all over the world.We wanted -needed- a “third place” coffee & tea experience locally. We
+                couldn’t find it here so we created it.</p>
+            </div>
+            <button class="bttn shop-now color1 text-capitalize">shop now</button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="selling-photo text-center px-5 position-relative overflow-hidden ">
+            <img class="w-75  img-fluid " src="img/Group-6.png" alt="selling-photo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end selling -->
+
 
   <!-- start portfolio -->
   <section>
-    <div class="portfolio py-5 my-5">
+    <div id="portfolio" class="portfolio py-5 my-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-6 photo mb-4 ">
+          <div class="col-6 col-md-4  photo mb-4 ">
             <div class="item">
               <img src="img/Mask-Group-5-1.png" class="w-100">
             </div>
@@ -210,7 +223,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 photo mb-4 ">
+          <div class="col-6 col-md-4  photo mb-4 ">
             <div class="item">
               <img src="img/Mask-Group-7.png" class="w-100">
             </div>
@@ -220,7 +233,7 @@
               <p><span>coffee <i class="fa fa-coffee" aria-hidden="true"></i> </span> / 18 Sep. 2018</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 photo mb-4 ">
+          <div class="col-6 col-md-4  photo mb-4 ">
             <div class="item">
               <img src="img/Mask-Group-5-1.png" class="w-100">
             </div>
@@ -236,224 +249,81 @@
   <!-- end portfolio -->
 
 
-  <!-- start Product  -->
-  <section class="product my-5 py-5">
-    <div class="container w-75">
-      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
-            type="button" role="tab" aria-controls="pills-all" aria-selected="true">all</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-Roasts-tab" data-bs-toggle="pill" data-bs-target="#pills-Roasts"
-            type="button" role="tab" aria-controls="pills-Roasts" aria-selected="false">Roasts </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-Americano-tab" data-bs-toggle="pill" data-bs-target="#pills-Americano"
-            type="button" role="tab" aria-controls="pills-Americano" aria-selected="false">Americano </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-Special-tab" data-bs-toggle="pill" data-bs-target="#pills-Special"
-            type="button" role="tab" aria-controls="pills-Special" aria-selected="false">Special</button>
-        </li>
-      </ul>
-      <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
-          <div class="container ">
-            <div class="row g-3">
-              <div class="col-md-4 col-sm-6 ">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-amar-preciado-9329429.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
+  <!-- start Products  -->
+  <section class="text-center product my-5 " id="Shop">
+    <div class="mix-it-up my-3 ">
+      <div class="my-3">
+        <button type="button" data-filter="*">All</button>
+        <button type="button" data-filter=".Special">Special</button>
+        <button type="button" data-filter=".Americano">Americano</button>
+        <button type="button" data-filter=".Roasts">Roasts</button>
+      </div>
+      <div class="container w-50">
+        <div class="row g-2">
+          <div class="col-6 col-md-4">
+            <div class="mix Special Roasts item w-100 text-center position-relative">
+              <img class="w-100" src="img/pexels-taufiq-muhammad-5151354.jpg" alt="" srcset="">
+              <div
+                class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
+                <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
               </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-denys-gromov-4669233.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="mix Special Roasts item w-100 text-center position-relative">
+              <img class="w-100" src="img/pexels-mauro-savoca-5995769.jpg" alt="" srcset="">
+              <div
+                class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
+                <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
               </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-ellie-burgin-3219809.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="mix Special Americano item w-100 text-center position-relative">
+              <img class="w-100" src="img/pexels-amar-preciado-9329429.jpg" alt="" srcset="">
+              <div
+                class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
+                <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
               </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-mauro-savoca-5995769.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="Americano mix item w-100 text-center position-relative">
+              <img class="w-100" src="img/pexels-pranjall-kumar-8464467.jpg" alt="" srcset="">
+              <div
+                class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
+                <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
               </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-pranjall-kumar-8464467.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="mix Americano Roasts Special item w-100 text-center position-relative">
+              <img class="w-100" src="img/pexels-taufiq-muhammad-5151354.jpg" alt="" srcset="">
+              <div
+                class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
+                <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
               </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-taufiq-muhammad-5151354.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="mix Americano Roasts item w-100 text-center position-relative">
+              <img class="w-100" src="img/pexels-pranjall-kumar-8464467.jpg" alt="" srcset="">
+              <div
+                class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
+                <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
               </div>
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="pills-Roasts" role="tabpanel" aria-labelledby="pills-Roasts-tab">
-          <div class="container ">
-            <div class="row g-3">
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-taufiq-muhammad-5151354.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-mauro-savoca-5995769.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-amar-preciado-9329429.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-pranjall-kumar-8464467.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-taufiq-muhammad-5151354.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="tab-pane fade" id="pills-Americano" role="tabpanel" aria-labelledby="pills-Americano-tab">
-          <div class="container">
-            <div class="row g-3">
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-ellie-burgin-3219809.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-mauro-savoca-5995769.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-pranjall-kumar-8464467.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="pills-Special" role="tabpanel" aria-labelledby="pills-Special-tab">
-          <div class="container">
-            <div class="row g-3">
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-ellie-burgin-3219809.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-mauro-savoca-5995769.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-pranjall-kumar-8464467.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="item w-100 text-center position-relative">
-                  <img class="w-100" src="img/pexels-taufiq-muhammad-5151354.jpg" alt="" srcset="">
-                  <div
-                    class="item-layer position-absolute w-100 h-100 text-white d-flex align-items-center justify-content-center">
-                    <h3>coffee with me <i class="fa fa-coffee" aria-hidden="true"></i></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
+
   <!--End Product  -->
 
 
   <!-- footer -->
-  <section class="footer py-5 ">
+  <section class="footer color1 py-5 ">
     <div class="container text-white">
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
@@ -499,6 +369,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="owlcarousel/owl.carousel.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.counterup.min.js"></script>
   <script src="js/coffee.js"></script>

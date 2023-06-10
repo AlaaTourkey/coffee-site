@@ -16,20 +16,57 @@
 }
 
 body {
-  background-color: var(--therd);
+  background-color: #000000ed;
   font-family: 'Nunito', sans-serif;
+  overflow: hidden;
+  color: #fff;
+}
 
+#loading {
+  position: fixed;
+  inset: 0;
+  background-color: #635d5d;
+  z-index: 33333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+#colorBox {
+  background-color: #2b9fa7;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  z-index: 222222;
+  cursor: pointer;
+}
+
+
+
+#btnUp {
+  background-color: #664d42;
+  z-index: 999999999;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  cursor: pointer;
+  display: none;
 }
 
 /* navbar */
 nav {
-  background-color: #fff;
+  background-color: rgba(54, 38, 38, 0.795);
   z-index: 99999;
-  box-shadow: 0px 2px 5px #888888;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
 }
 
 nav .nav-link {
-  color: var(--mainColor);
+  color: #b68834;
   letter-spacing: 1px;
   font-weight: 600;
   padding-right: 1em;
@@ -38,11 +75,7 @@ nav .nav-link {
 
 nav .nav-link:hover {
   color: var(--second);
-
-}
-
-nav li:hover {
-  color: var(--mainColor);
+  color: rgb(54, 38, 38);
 }
 
 /* ==========> end nav */
@@ -161,7 +194,7 @@ nav li:hover {
 
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 455px) {
   .home .caption h1 {
     font-size: 1.3em;
   }
@@ -176,6 +209,9 @@ nav li:hover {
     padding: .2em 1em;
     border: none;
     font-weight: 600;
+  }
+  nav .navbar-brand {
+    width: 30%;
   }
 
 }
@@ -198,7 +234,7 @@ nav li:hover {
   }
 
   nav .navbar-brand {
-    width: 20%;
+    width: 17%;
   }
 
 }
@@ -217,11 +253,12 @@ nav li:hover {
   font-family: 'Slackey', cursive;
   font-size: 2.8rem;
   font-weight: 800;
+  color: #b68834;
 }
 
 .about .container .about-caption p:first-child,
 .selling .container .selling-caption p {
-  color: #222;
+  color: #f8e7e7;
   letter-spacing: .5px;
   line-height: 1.4rem;
   font-weight: 600;
@@ -232,7 +269,7 @@ nav li:hover {
 }
 
 .about .container .about-caption .state .state-item h3 {
-  color: #222;
+  color: #b7afaf;
   font-size: 3.5rem;
   font-weight: 600;
 }
@@ -270,50 +307,32 @@ nav li:hover {
 /*=================> start selling */
 
 
-.selling .selling-photo .photo {
-  bottom: 14px;
-  left: 11rem;
-}
-
 @media (max-width:991px) {
   .selling .selling-photo img:first-child {
     width: 100% !important;
   }
 
-  .selling .selling-photo .photo {
-    bottom: 1rem;
-    left: 4rem;
-  }
 }
 
 @media only screen and (max-width: 768px) {
   .selling .selling-photo img:first-child {
     width: 100% !important;
   }
-
-  .selling .selling-photo .photo {
-    bottom: 1rem;
-    left: 8rem;
-  }
-
-
 }
 
 /* end selling */
 
 /* start offer */
 
-
-.offer .container-fluid .hot-offer {
-  background-image: url(../img/Mask-Group-2.png);
+.offer {
+  background-image: url(../img/mid-banner1-bg.jpg);
   background-size: cover;
-  background-position: center;
-  background-color: #222;
 }
+
 
 .offer .container-fluid .hot-offer h1 {
   font-family: 'Slackey', cursive;
-  font-size: 5.5rem;
+  font-size: 6.8rem;
   padding: 5rem 2rem 1rem;
 }
 
@@ -340,15 +359,16 @@ nav li:hover {
   width: 100%;
   height: 2px;
 }
-.offer .container-fluid .p-0{
-  background-color: #663e1c;
-}
+
+
+
 .offer .container-fluid .digitalClock h1 {
   margin: 4rem 0;
   font-size: 7rem;
   font-weight: 600;
 }
-.offer .container-fluid .digitalClock img{
+
+.offer .container-fluid .digitalClock img {
   top: 2rem;
   left: -6rem;
 }
@@ -356,22 +376,25 @@ nav li:hover {
 /* media */
 
 @media (max-width:991px) {
-  .offer .container-fluid .digitalClock img{
+  .offer .container-fluid .digitalClock img {
     left: 1.5rem;
   }
 }
+
 @media only screen and (max-width: 768px) {
-  .offer .container-fluid .digitalClock img{
+  .offer .container-fluid .digitalClock img {
     left: 1rem;
     width: 22%;
     top: 6rem;
   }
 }
+
 @media only screen and (max-width: 420px) {
-  .offer .container-fluid .digitalClock h1{
+  .offer .container-fluid .digitalClock h1 {
     font-size: 4rem;
   }
-  .offer .container-fluid .digitalClock h2{
+
+  .offer .container-fluid .digitalClock h2 {
     font-size: 3rem;
   }
 }
@@ -381,41 +404,45 @@ nav li:hover {
 
 /*=========> start portfolio */
 
+.portfolio {
+  background-image: url(../img/footer-bg.jpg);
+  background-color: #00000082;
+}
 
 .portfolio span {
-    color: #0078ff;
+  color: #2e1305;
 }
 
 .portfolio img {
-    transition: transform .7s;
-    -webkit-transition: transform .7s;
-    -moz-transition: transform .7s;
-    -ms-transition: transform .7s;
-    -o-transition: transform .7s;
+  transition: transform .7s;
+  -webkit-transition: transform .7s;
+  -moz-transition: transform .7s;
+  -ms-transition: transform .7s;
+  -o-transition: transform .7s;
 }
 
 .portfolio .photo:hover img {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 .portfolio .item {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .portfolio .photo {
-    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
-    overflow: hidden;
+  box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+  overflow: hidden;
 }
 
 /* end portfolio */
 
 
 /*start Product */
-.product .item .item-layer{
+.product .item .item-layer {
   background-color: rgba(0, 0, 0, 0.59);
   opacity: 0;
   top: 0;
@@ -431,7 +458,8 @@ nav li:hover {
   -ms-transform: scale(.5);
   -o-transform: scale(.5);
 }
-.product .item:hover .item-layer{
+
+.product .item:hover .item-layer {
   opacity: 1;
   transform: scale(1);
   -webkit-transform: scale(1);
@@ -439,18 +467,24 @@ nav li:hover {
   -ms-transform: scale(1);
   -o-transform: scale(1);
 }
-.nav-pills .nav-link.active{
-  background-color: var(--mainColor);
+
+.product .mix-it-up button {
+  background-color: #663e1c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  border-radius: 1rem;
 }
-.product .nav-link{
-  color: var(--second);
+
+.product .mix-it-up .mixitup-control-active {
+  background-color: #635d5d;
 }
 
 /*end Product */
 
 /* footer */
 .footer {
-  background-color:#2e1305;
+  background-image: url(../img/mid-banner2-bg.jpg);
 }
 
 .footer .container .links {
@@ -511,4 +545,3 @@ nav li:hover {
   color: #fff;
 
 }
-
